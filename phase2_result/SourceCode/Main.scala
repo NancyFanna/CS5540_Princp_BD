@@ -9,7 +9,10 @@ object Main {
     val df = spark.read.format("csv").option("header","true").load("/Users/louis_lyu/Desktop/phase2/tweets.csv")
     df.createOrReplaceTempView("tmp")
     df.show()
-
+//    res1 = df.sample(false, 0.01）
+//    res2 = df.sample(false, 0.01）
+//    res3 = df.sample(false, 0.01）
+    
 //    val df1 = spark.sql("select Count(id) from tmp where text like '%Trump%'")
 //    df1.show()
 //    println("These are the tweets mentioned Trump")
